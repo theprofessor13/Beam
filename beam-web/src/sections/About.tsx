@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Reveal } from './Reveal';
-import { CountUp } from './CountUp';
+import { Reveal } from '../components/Reveal';
+import { CountUp } from '../components/CountUp';
 
 export function About() {
   return (

@@ -1,14 +1,15 @@
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { HowItWorks } from './components/HowItWorks';
-import { Investments } from './components/Investments';
-import { MissionVision } from './components/MissionVision';
-import { About } from './components/About';
+import { Hero } from './sections/Hero';
+import { HowItWorks } from './sections/HowItWorks';
+import { Investments } from './sections/Investments';
+import { MissionVision } from './sections/MissionVision';
+import { About } from './sections/About';
 import { Compare } from './components/Compare';
 import { Security } from './components/Security';
-import { FAQ } from './components/FAQ';
-import { CTA } from './components/CTA';
+import { FAQ } from './sections/FAQ';
+import { CTA } from './sections/CTA';
 import { Footer } from './components/Footer';
+import Testimonials from './sections/Testimonias';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <About />
         <Compare />
         <Security />
+        <Testimonials />
         <FAQ />
         <CTA />
       </main>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Reveal } from './Reveal';
+import { Reveal } from '../components/Reveal';
 
 const steps = [
   {
