@@ -29,7 +29,7 @@ const faqs = [
 function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultOpen?: boolean }) {
   const [open, setOpen] = useState(defaultOpen);
   return (
-    <div className="bg-white border-[1.5px] border-line rounded-2xl px-5 overflow-hidden">
+    <div className="bg-surface border-[1.5px] border-line rounded-2xl px-5 overflow-hidden">
       <button
         onClick={() => setOpen((o) => !o)}
         className="w-full flex items-center justify-between gap-4 py-[18px] text-left font-display font-semibold text-[15px]"

@@ -24,7 +24,7 @@ export function Investments() {
         >
           <motion.div
             variants={staggerItem}
-            className="relative overflow-hidden rounded-xl2 p-[30px_26px] text-white bg-gradient-to-br from-ink to-ink-2 flex flex-col"
+            className="relative overflow-hidden rounded-xl2 p-[30px_26px] text-white bg-gradient-to-br from-ink to-ink-2 flex flex-col dark:ring-1 dark:ring-white/10"
           >
             <motion.div
               className="pointer-events-none absolute -right-16 -bottom-16 w-[220px] h-[220px] rounded-full"
@@ -55,10 +55,10 @@ export function Investments() {
             variants={staggerItem}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.2 }}
-            className="bg-white border-[1.5px] border-line rounded-xl2 p-[30px_26px] flex flex-col"
+            className="bg-surface border-[1.5px] border-line rounded-xl2 p-[30px_26px] flex flex-col"
           >
             <div className="w-[42px] h-[42px] rounded-[13px] bg-cobalt-10 flex items-center justify-center mb-[18px]">
-              <PiggyBank size={18} className="text-cobalt" />
+              <PiggyBank size={18} className="text-accent" />
             </div>
             <h3 className="font-display text-[19px] mb-2">Beam Vaults</h3>
             <p className="text-sm text-slate m-0">
@@ -70,10 +70,10 @@ export function Investments() {
             variants={staggerItem}
             whileHover={{ y: -4 }}
             transition={{ duration: 0.2 }}
-            className="bg-white border-[1.5px] border-line rounded-xl2 p-[30px_26px] flex flex-col"
+            className="bg-surface border-[1.5px] border-line rounded-xl2 p-[30px_26px] flex flex-col"
           >
             <div className="w-[42px] h-[42px] rounded-[13px] bg-cobalt-10 flex items-center justify-center mb-[18px]">
-              <LayoutGrid size={18} className="text-cobalt" />
+              <LayoutGrid size={18} className="text-accent" />
             </div>
             <h3 className="font-display text-[19px] mb-2">Flexible plans</h3>
             <p className="text-sm text-slate m-0">

@@ -8,10 +8,29 @@
     <meta name="description" content="Beam turns any QR code into an instant bank transfer. Skip the card, skip the account number — just scan." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
+    <meta name="theme-color" content="#F6F7FB" />
+    <script>
+      // Set the theme before first paint so dark users never see a white flash.
+      (function () {
+        var theme = 'light';
+        try {
+          var saved = localStorage.getItem('beam-theme');
+          if (saved === 'light' || saved === 'dim' || saved === 'dark') theme = saved;
+          else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dim';
+        } catch (e) {}
+        var root = document.documentElement;
+        root.dataset.theme = theme;
+        if (theme !== 'light') root.classList.add('dark');
+        var colors = { light: '#F6F7FB', dim: '#15202B', dark: '#000000' };
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', colors[theme]);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

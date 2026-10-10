@@ -23,7 +23,7 @@ export function Hero() {
         <motion.div variants={container} initial="hidden" animate="show" className="text-center lg:text-left">
           <motion.div
             variants={item}
-            className="inline-flex items-center gap-2 text-[12.5px] font-bold text-cobalt bg-cobalt-10 px-3.5 py-1.5 rounded-full mb-5"
+            className="inline-flex items-center gap-2 text-[12.5px] font-bold text-accent bg-cobalt-10 px-3.5 py-1.5 rounded-full mb-5"
           >
             <motion.span
               className="w-1.5 h-1.5 rounded-full bg-mint"
@@ -38,7 +38,7 @@ export function Hero() {
               Beam.
             </motion.span>
             <motion.span variants={item} className="block">
-              Scan. <span className="text-cobalt">Done.</span>
+              Scan. <span className="text-accent">Done.</span>
             </motion.span>
           </h1>
 
@@ -50,13 +50,13 @@ export function Hero() {
           <motion.div variants={item} className="flex gap-3.5 mt-8 flex-wrap justify-center lg:justify-start">
             <a
               href="#download"
-              className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm bg-ink text-white transition-transform active:scale-[0.97] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm bg-foreground text-paper transition-transform active:scale-[0.97] hover:-translate-y-0.5"
             >
               <Apple size={16} /> App Store
             </a>
             <a
               href="#download"
-              className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm border-[1.5px] border-line text-ink transition-transform active:scale-[0.97] hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm border-[1.5px] border-line text-foreground transition-transform active:scale-[0.97] hover:-translate-y-0.5"
             >
               <PlayCircle size={16} /> Google Play
             </a>

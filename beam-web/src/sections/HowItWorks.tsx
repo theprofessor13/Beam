@@ -42,7 +42,7 @@ export function HowItWorks() {
 
           {steps.map((s, i) => (
             <Reveal key={s.n} direction={i === 0 ? 'right' : i === 2 ? 'left' : 'up'} delay={i * 0.15}>
-              <div className="relative bg-white border-[1.5px] border-line rounded-xl2 p-[30px_26px] z-10">
+              <div className="relative bg-surface border-[1.5px] border-line rounded-xl2 p-[30px_26px] z-10">
                 <div className="font-mono text-[13px] text-slate-2 border border-line w-[34px] h-[34px] rounded-full flex items-center justify-center mb-5 bg-paper">
                   {s.n}
                 </div>

@@ -25,7 +25,7 @@ export function Security() {
     <section id="security" className="py-[88px]">
       <div className="max-w-[1120px] mx-auto px-6">
         <Reveal direction="scale">
-          <div className="relative overflow-hidden rounded-xl3 p-[56px_44px] text-white bg-ink">
+          <div className="relative overflow-hidden rounded-xl3 p-[56px_44px] text-white bg-ink dark:ring-1 dark:ring-white/10">
             <motion.div
               className="pointer-events-none absolute -left-24 -bottom-24 w-[340px] h-[340px] rounded-full"
               style={{ background: 'radial-gradient(circle, rgba(23,217,163,0.18), transparent 70%)' }}

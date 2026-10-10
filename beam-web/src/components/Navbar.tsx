@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { BrandMark } from './BrandMark';
+import { ThemeToggle } from '../theme/ThemeToggle';
 
 const links = [
   { href: '#how', label: 'How it works' },
@@ -38,18 +39,21 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="hover:text-ink transition-colors">
+            <a key={l.href} href={l.href} className="hover:text-foreground transition-colors">
               {l.label}
             </a>
           ))}
         </div>
 
-        <a
-          href="#download"
-          className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-display font-semibold text-white bg-gradient-to-br from-cobalt to-cobalt-dark shadow-[0_10px_22px_-8px_rgba(54,84,255,0.55)] transition-transform active:scale-[0.97] hover:shadow-[0_14px_28px_-8px_rgba(54,84,255,0.6)]"
-        >
-          Get the app
-        </a>
+          <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <a
+            href="#download"
+            className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-display font-semibold text-white bg-gradient-to-br from-cobalt to-cobalt-dark shadow-[0_10px_22px_-8px_rgba(54,84,255,0.55)] transition-transform active:scale-[0.97] hover:shadow-[0_14px_28px_-8px_rgba(54,84,255,0.6)]"
+          >
+            Get the app
+          </a>
+        </div>
       </nav>
     </motion.header>
   );

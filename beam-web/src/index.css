@@ -2,16 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Theme tokens as space-separated RGB triples so Tailwind can apply opacity.
+  Three modes, modeled on X/Twitter's display settings:
+    light — white
+    dim   — soft navy-slate
+    dark  — "Lights out", true black
+*/
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --paper: 246 247 251;
+  --surface: 255 255 255;
+  --foreground: 16 21 43;
+  --slate: 107 113 144;
+  --line: 228 231 240;
+  --accent: 54 84 255;
+}
+
+:root[data-theme='dim'] {
+  color-scheme: dark;
+  --paper: 21 32 43; /* #15202B */
+  --surface: 30 39 50; /* #1E2732 */
+  --foreground: 247 249 249; /* #F7F9F9 */
+  --slate: 139 152 165; /* #8B98A5 */
+  --line: 56 68 77; /* #38444D */
+  --accent: 122 147 255;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: 0 0 0;
+  --surface: 22 24 28; /* #16181C */
+  --foreground: 231 233 234; /* #E7E9EA */
+  --slate: 139 148 158; /* #8B949E */
+  --line: 47 51 54; /* #2F3336 */
+  --accent: 122 147 255;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-paper text-ink font-body antialiased;
+  @apply bg-paper text-foreground font-body antialiased;
 }
 
 ::selection {
-  @apply bg-cobalt/20;
+  @apply bg-cobalt/30;
+}
+
+/* Smooth cross-fade while the theme changes. The class is added by
+   ThemeProvider for ~400ms around a switch, so normal hover/transform
+   behavior is untouched the rest of the time. */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    fill 0.35s ease,
+    stroke 0.35s ease !important;
 }
 
 /* Respect reduced-motion preferences globally */
@@ -28,7 +81,7 @@ body {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 2px solid #3654ff;
+  outline: 2px solid rgb(var(--accent));
   outline-offset: 3px;
   border-radius: 6px;
 }

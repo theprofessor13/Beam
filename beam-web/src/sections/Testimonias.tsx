@@ -53,7 +53,7 @@ export default function Testimonials() {
               variants={staggerItem}
               whileHover={{ y: -5 }}
               transition={{ duration: 0.2 }}
-              className="bg-white border-[1.5px] border-line rounded-xl2 p-7 flex flex-col m-0"
+              className="bg-surface border-[1.5px] border-line rounded-xl2 p-7 flex flex-col m-0"
             >
               <div className="flex gap-1 text-mint mb-4" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -61,12 +61,12 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <blockquote className="flex-1 m-0 text-[14.5px] leading-relaxed text-ink">
+              <blockquote className="flex-1 m-0 text-[14.5px] leading-relaxed text-foreground">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
 
               <figcaption className="flex items-center gap-3 mt-6 pt-5 border-t border-line">
-                <div className="w-10 h-10 rounded-full bg-cobalt-10 text-cobalt font-display font-bold text-[13px] flex items-center justify-center shrink-0">
+                <div className="w-10 h-10 rounded-full bg-cobalt-10 text-accent font-display font-bold text-[13px] flex items-center justify-center shrink-0">
                   {initials(t.name)}
                 </div>
                 <div>

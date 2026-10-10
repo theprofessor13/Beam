@@ -113,7 +113,7 @@ export function PhoneScan() {
               </div>
               <div>
                 <b className="block text-xs text-ink">Tunde Okafor</b>
-                <span className="text-[10px] text-slate font-mono">
+                <span className="text-[10px] text-[#6B7190] font-mono">
                   {phase === 'success' ? '₦25,000 · Beamed' : 'GTBank •••• 4821'}
                 </span>
               </div>

@@ -22,19 +22,19 @@ export function About() {
           </p>
 
           <div className="grid grid-cols-3 gap-4 mt-[26px]">
-            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-white">
+            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-surface">
               <b className="block font-mono text-xl">
                 <CountUp to={2026} duration={1.2} />
               </b>
               <span className="text-[11.5px] text-slate">Founded</span>
             </div>
-            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-white">
+            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-surface">
               <b className="block font-mono text-xl">
                 <CountUp to={50} duration={1.2} suffix="+" />
               </b>
               <span className="text-[11.5px] text-slate">Team members</span>
             </div>
-            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-white">
+            <div className="border-[1.5px] border-line rounded-2xl p-[18px_14px] text-center bg-surface">
               <b className="block font-mono text-xl">Lagos</b>
               <span className="text-[11.5px] text-slate">Headquarters</span>
             </div>

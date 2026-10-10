@@ -22,12 +22,12 @@ export function Compare() {
           </p>
         </Reveal>
 
-        <Reveal direction="scale" className="overflow-x-auto border-[1.5px] border-line rounded-xl2 bg-white">
+        <Reveal direction="scale" className="overflow-x-auto border-[1.5px] border-line rounded-xl2 bg-surface">
           <table className="w-full min-w-[560px] border-collapse">
             <thead>
               <tr>
                 <th className="p-[16px_20px] text-left" />
-                <th className="p-[16px_20px] text-left font-display text-[13px] text-ink font-semibold bg-mint-10 rounded-t-2xl">
+                <th className="p-[16px_20px] text-left font-display text-[13px] text-foreground font-semibold bg-mint-10 rounded-t-2xl">
                   Beam (Scan)
                 </th>
                 <th className="p-[16px_20px] text-left font-display text-[13px] text-slate font-semibold">Card</th>
