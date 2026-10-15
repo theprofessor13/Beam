@@ -21,8 +21,20 @@ const faqs = [
     a: 'Yes \u2014 both remain available in the app. Beam just makes scanning the fastest option, so it becomes your default.',
   },
   {
-    q:'',
-    a:''
+    q:'When does Beam launch?',
+    a:"Beam is in development and we have not set up a public launch date. Join the waitlist and you will get an email when early access opens"
+  },
+  {
+    q: 'Is Beam free?',
+    a: "Pricing hasn't been annouced yet. We'll share it before launch"
+  },
+  {
+    q:'Which Banks will work with Beam?',
+    a:"We're finalising our bank and payment partners. The list will be published before launch"
+  },
+  {
+    q:'Do I need to link my bank account to use Beam?',
+    a:"No. You can create an account first and link your bank when you’re ready. A linked account is only needed when you actually send or receive money."
   }
 ];
 

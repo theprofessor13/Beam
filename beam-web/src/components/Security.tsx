@@ -4,19 +4,19 @@ import { Reveal, staggerContainer, staggerItem } from './Reveal';
 
 const items = [
   {
-    icon: ShieldCheck,
-    title: 'Bank-licensed transfer rails',
-    body: 'Every payment routes through a regulated payment partner, not a custom pipe.',
+    icon: Lock,
+    title: 'Codes, not account numbers',
+    body: 'A Beam code carries a short-lived token, not your raw account details.',
   },
   {
     icon: ScanFace,
-    title: 'Biometric authorization',
-    body: "Face ID or fingerprint confirms every debit \u2014 no PIN typed on a stranger's device.",
+    title: 'Confirm every payment',
+    body: "Face ID or fingerprint approves each payment before any money arrives.",
   },
   {
-    icon: Lock,
-    title: 'Encrypted at rest and in transit',
-    body: 'Bank details are encrypted end-to-end and never appear in logs.',
+    icon: ShieldCheck,
+    title: 'See who you’re paying first',
+    body: 'The recipient’s name and bank are shown before you confirm, so a wrong scan is easy to catch.',
   },
 ];
 
@@ -34,12 +34,12 @@ export function Security() {
             />
             <div className="relative grid md:grid-cols-2 gap-10">
               <Reveal direction="left">
+                          <p className="text-[12.5px] font-bold uppercase tracking-wide text-mint mb-2.5">HOW WE'RE DESIGNING FOR SAFETY</p>
                 <h2 className="font-display text-[28px] text-white max-w-[360px]">
                   Your bank details never touch the QR code.
                 </h2>
                 <p className="mt-3.5 text-slate-2 text-[14.5px] max-w-[380px]">
-                  Every scan resolves through an encrypted, short-lived token &mdash; not your raw account number.
-                  Beam never stores card data, because there&rsquo;s no card to store.
+          Beam will work with licensed payment partners. We’ll publish the full details, including partners and protections, before launch.
                 </p>
               </Reveal>
 

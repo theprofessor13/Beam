@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 import { Reveal } from '../components/Reveal';
 import { CountUp } from '../components/CountUp';
 
@@ -38,6 +39,16 @@ export function About() {
               <b className="block font-mono text-xl">Lagos</b>
               <span className="text-[11.5px] text-slate">Headquarters</span>
             </div>
+          </div>
+
+          <div className="mt-8">
+            <a
+              href="/about"
+              className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-br from-cobalt to-cobalt-dark px-6 py-3 font-display text-sm font-semibold text-white shadow-[0_10px_22px_-8px_rgba(54,84,255,0.55)] transition-transform hover:-translate-y-0.5 active:scale-[0.97]"
+            >
+              Learn More
+              <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
           </div>
         </Reveal>
 

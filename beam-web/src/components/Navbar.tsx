@@ -51,7 +51,7 @@ export function Navbar() {
             href="#download"
             className="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-display font-semibold text-white bg-gradient-to-br from-cobalt to-cobalt-dark shadow-[0_10px_22px_-8px_rgba(54,84,255,0.55)] transition-transform active:scale-[0.97] hover:shadow-[0_14px_28px_-8px_rgba(54,84,255,0.6)]"
           >
-            Get the app
+            Join the waitlist
           </a>
         </div>
       </nav>

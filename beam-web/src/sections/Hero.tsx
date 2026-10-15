@@ -47,7 +47,7 @@ export function Hero() {
             manual account numbers.
           </motion.p>
 
-          <motion.div variants={item} className="flex gap-3.5 mt-8 flex-wrap justify-center lg:justify-start">
+          {/* <motion.div variants={item} className="flex gap-3.5 mt-8 flex-wrap justify-center lg:justify-start">
             <a
               href="#download"
               className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm bg-foreground text-paper transition-transform active:scale-[0.97] hover:-translate-y-0.5"
@@ -60,7 +60,7 @@ export function Hero() {
             >
               <PlayCircle size={16} /> Google Play
             </a>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div variants={item} className="flex gap-7 mt-10 flex-wrap justify-center lg:justify-start">
             <div>

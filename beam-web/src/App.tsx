@@ -10,24 +10,41 @@ import { FAQ } from './sections/FAQ';
 import { CTA } from './sections/CTA';
 import { Footer } from './components/Footer';
 import Testimonials from './sections/Testimonias';
+import AboutBeam from './Pages/About';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
-    <div className="overflow-x-hidden">
-      <Navbar />
-      <main>
-        <Hero />
-        <HowItWorks />
-        <Investments />
-        <MissionVision />
-        <About />
-        <Compare />
-        <Security />
-        <Testimonials />
-        <FAQ />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="overflow-x-hidden">
+        <Navbar />
+        
+        <Routes>
+          {/* Main Landing Page */}
+          <Route
+            path="/"
+            element={
+              <main>
+                <Hero />
+                <HowItWorks />
+                <Investments />
+                <MissionVision />
+                <About />
+                <Compare />
+                <Security />
+                <Testimonials />
+                <FAQ />
+                <CTA />
+              </main>
+            }
+          />
+
+          {/* Dedicated About Page */}
+          <Route path="/about" element={<AboutBeam />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }

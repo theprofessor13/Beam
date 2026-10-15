@@ -36,11 +36,11 @@ export function Footer() {
             <a href="#mission" className="block text-sm text-foreground mb-2.5">
               Mission &amp; vision
             </a>
-            <a href="#" className="block text-sm text-foreground mb-2.5">
-              Careers
+            <a href="#FAQ" className="block text-sm text-foreground mb-2.5">
+              FAQ
             </a>
-            <a href="#" className="block text-sm text-foreground mb-0">
-              Contact
+            <a href="#CTA" className="block text-sm text-foreground mb-0">
+              Join the waitlist
             </a>
           </div>
           <div>
@@ -57,7 +57,7 @@ export function Footer() {
 
       <div className="max-w-[1120px] mx-auto px-6 flex justify-between mt-12 pt-6 border-t border-line text-[12.5px] text-slate flex-wrap gap-3">
         <span>&copy; 2026 Beam. All rights reserved.</span>
-        <span>Beam partners with licensed payment providers for all transfers.</span>
+        <span>Beam is in development. Features shown are planned and may change.</span>
       </div>
     </footer>
   );

@@ -19,7 +19,7 @@ export function CTA() {
             </h2>
             <p className="relative mt-3 text-white/85">Link your bank once. Beam every payment after.</p>
             <div className="relative flex gap-3.5 justify-center mt-8 flex-wrap">
-              <a
+              {/* <a
                 href="#"
                 className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm bg-white text-ink transition-transform active:scale-[0.97] hover:-translate-y-0.5"
               >
@@ -30,7 +30,7 @@ export function CTA() {
                 className="inline-flex items-center gap-2 rounded-xl px-5 py-[11px] font-display font-semibold text-sm border-[1.5px] border-white/40 text-white transition-transform active:scale-[0.97] hover:-translate-y-0.5"
               >
                 <PlayCircle size={16} /> Google Play
-              </a>
+              </a> */}
             </div>
           </div>
         </Reveal>
