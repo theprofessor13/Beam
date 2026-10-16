@@ -14,7 +14,7 @@ export function MissionVision() {
             <div className="bg-surface border-[1.5px] border-line rounded-xl2 p-[34px] h-full">
               <span className="block text-xs font-bold uppercase tracking-wide text-accent mb-3.5">Our mission</span>
               <p className="font-display text-[19px] leading-[1.4] text-foreground m-0">
-                To make moving money IN Nigeria as instant as a glance &mdash; so no one has to type a 10-digit account number
+                To make moving money in Nigeria as instant as a glance &mdash; so no one has to type a 10-digit account number
                 to pay someone standing right next to them.
               </p>
             </div>
