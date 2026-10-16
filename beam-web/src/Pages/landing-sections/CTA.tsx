@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Apple, PlayCircle } from 'lucide-react';
-import { Reveal } from '../components/Reveal';
+import { Reveal } from '../../components/Reveal';
 
 export function CTA() {
   return (

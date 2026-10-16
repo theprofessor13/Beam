@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { TrendingUp, PiggyBank, LayoutGrid } from 'lucide-react';
-import { Reveal, staggerContainer, staggerItem } from '../components/Reveal';
-import { CountUp } from '../components/CountUp';
+import { Reveal, staggerContainer, staggerItem } from '../../components/Reveal';
+import { CountUp } from '../../components/CountUp';
 
 export function Investments() {
   return (

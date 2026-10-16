@@ -49,12 +49,12 @@ function TypingDigits() {
 }
 
 const HISTORY = [
-  ['Tunde Okafor', 'Mar 3', '₦12,000'],
-  ['Tunde Adebayo', 'Feb 27', '₦4,500'],
-  ['T. Okafor', 'Feb 21', '₦25,000'],
-  ['Tunde O.', 'Feb 14', '₦8,000'],
+  ['David Adebayo', 'Mar 3', '₦12,000'],
+  ['John Doe', 'Feb 27', '₦4,500'],
+  ['Dayo Odulaja', 'Feb 21', '₦25,000'],
+  ['Andrew Baxton.', 'Feb 14', '₦8,000'],
   ['Tolu Okafor', 'Feb 9', '₦15,000'],
-  ['Tunde Okafor (GTB)', 'Feb 2', '₦6,200'],
+  ['Genaro Macpherson', 'Feb 27', '₦20,000'],
 ];
 
 /** An endless list of near-identical past payments, with the question everyone asks. */
@@ -132,7 +132,7 @@ export function Problem() {
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-cobalt-10">
                   <History size={18} className="text-accent" />
                 </span>
-                <h3 className="font-display text-lg font-semibold text-foreground">Scrolling history</h3>
+                <h3 className="font-display text-lg font-semibold text-foreground">Transaction history</h3>
               </div>
               <HistoryScroll />
               <p className="mt-5 text-sm leading-relaxed text-slate">

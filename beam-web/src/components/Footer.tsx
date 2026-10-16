@@ -15,40 +15,40 @@ export function Footer() {
         <div className="flex gap-14 flex-wrap">
           <div>
             <b className="block text-[12.5px] font-bold text-slate uppercase tracking-wide mb-3.5">Product</b>
-            <a href="#how" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               How it works
             </a>
-            <a href="#invest" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               Investments
             </a>
-            <a href="#compare" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               Why Beam
             </a>
-            <a href="#security" className="block text-sm text-foreground mb-0">
+            <a href="/" className="block text-sm text-foreground mb-0">
               Security
             </a>
           </div>
           <div>
             <b className="block text-[12.5px] font-bold text-slate uppercase tracking-wide mb-3.5">Company</b>
-            <a href="#about" className="block text-sm text-foreground mb-2.5">
+            <a href="/about" className="block text-sm text-foreground mb-2.5">
               About us
             </a>
-            <a href="#mission" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               Mission &amp; vision
             </a>
-            <a href="#FAQ" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               FAQ
             </a>
-            <a href="#CTA" className="block text-sm text-foreground mb-0">
+            <a href="/" className="block text-sm text-foreground mb-0">
               Join the waitlist
             </a>
           </div>
           <div>
             <b className="block text-[12.5px] font-bold text-slate uppercase tracking-wide mb-3.5">Legal</b>
-            <a href="#" className="block text-sm text-foreground mb-2.5">
+            <a href="/" className="block text-sm text-foreground mb-2.5">
               Privacy
             </a>
-            <a href="#" className="block text-sm text-foreground mb-0">
+            <a href="/" className="block text-sm text-foreground mb-0">
               Terms
             </a>
           </div>

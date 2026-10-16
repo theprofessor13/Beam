@@ -4,11 +4,11 @@ import { BrandMark } from './BrandMark';
 import { ThemeToggle } from '../theme/ThemeToggle';
 
 const links = [
-  { href: '#how', label: 'How it works' },
-  { href: '#invest', label: 'Invest' },
-  { href: '#compare', label: 'Why Beam' },
-  { href: '#about', label: 'About' },
-  { href: '#faq', label: 'FAQ' },
+  { href: '/', label: 'How it works' },
+  { href: '/', label: 'Invest' },
+  { href: '/', label: 'Why Beam' },
+  { href: '/about', label: 'About' },
+  { href: '/', label: 'FAQ' },
 ];
 
 export function Navbar() {

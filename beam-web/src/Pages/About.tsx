@@ -1,7 +1,7 @@
-import { AboutHero } from "./sections/Hero";
-import { Problem } from "./sections/Problem";
-import { Difference } from "./sections/Beamdifference";
-import { Roadmap } from "./sections/RoadMap";
+import { AboutHero } from "./about-sections/Hero";
+import { Problem } from "./about-sections/Problem";
+import { Difference } from "./about-sections/Beamdifference";
+import { Roadmap } from "./about-sections/RoadMap";
 
 export default function AboutBeam() {
     return (

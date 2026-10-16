@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import { Reveal, staggerContainer, staggerItem } from '../components/Reveal';
+import { Reveal, staggerContainer, staggerItem } from '../../components/Reveal';
 
 const testimonials = [
   {

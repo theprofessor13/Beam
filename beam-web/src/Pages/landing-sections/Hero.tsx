@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Apple, PlayCircle } from 'lucide-react';
-import { PhoneScan } from '../components/PhoneScan';
-import { CountUp } from '../components/CountUp';
+import { PhoneScan } from '../../components/PhoneScan';
+import { CountUp } from '../../components/CountUp';
 
 const container = {
   hidden: {},
