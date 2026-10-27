@@ -52,7 +52,7 @@ const HISTORY = [
   ['David Adebayo', 'Mar 3', '₦12,000'],
   ['John Doe', 'Feb 27', '₦4,500'],
   ['Dayo Odulaja', 'Feb 21', '₦25,000'],
-  ['Andrew Baxton.', 'Feb 14', '₦8,000'],
+  ['Andrew Baxton', 'Feb 14', '₦8,000'],
   ['Tolu Okafor', 'Feb 9', '₦15,000'],
   ['Genaro Macpherson', 'Feb 27', '₦20,000'],
 ];
